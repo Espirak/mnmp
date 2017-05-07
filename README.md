@@ -14,10 +14,8 @@ nginx+mysql+php for macos
 
 2. nginx:
 
-```bash
- $ vim /usr/local/etc/nginx/nginx.conf
-```
- http {...} 里面最后面加上: ```code include vhost/*.conf;``` (大概是倒数第三行的位置)
+```bash $ vim /usr/local/etc/nginx/nginx.conf ```
+http {...} 里面最后面加上:  include vhost/*.conf; (大概是倒数第三行的位置)
  ```bash $ vim /usr/local/etc/nginx/vhost/default.conf``` , 添加类似下面的内容:
 ```ini
 server {
