@@ -2,7 +2,7 @@
 nginx+mysql+php for macos
 
 # 安装
-1. 把: https://github.com/Espirak/mnmp 的脚本下载下来.
+## 1. 把: https://github.com/Espirak/mnmp 的脚本下载下来.
 
 ```bash
   $ git clone https://github.com/Espirak/mnmp
@@ -12,7 +12,7 @@ nginx+mysql+php for macos
 
 必要的一些配置:
 
-2. nginx:
+## 2. nginx:
 
 ``` $ vim /usr/local/etc/nginx/nginx.conf ```
 http {...} 里面最后面加上:  include vhost/*.conf; (大概是倒数第三行的位置)  
@@ -46,7 +46,7 @@ server {
 ``` $ sudo sh -c "echo '127.0.0.1 yourdomain.com' >> /etc/hosts"```  
 上面的nginx配置和命令是绑定http://yourdomain.com作为域名, 绑定到/your_direcotry目录(域名和目录根据自己的需要修改吧).
 
-3. php-fpm:
+## 3. php-fpm:
 
 ``` $ vim /usr/local/etc/php/5.6/php-fpm.conf```, 找到并修改下面3行, 后面两个是要注释掉的:
 ```ini
@@ -59,12 +59,12 @@ error_log = /tmp/php-fpm.log
 date.timezone = Asia/Shanghai
 error_reporting = E_ALL
 ```
-4. mysql:
+## 4. mysql:
 
 基本不需要配置了, 配置文件在``` /usr/local/opt/mysql/my-new.cnf``` 如果没有就是 ```code my.cnf```.
 默认不需密码, 如果需要可以执行: mysql_secure_installation 一步步来, 本地开发意义不大.
 
-5. 启动重启service脚本:
+## 5. 启动重启service脚本:
 
 设置权限: ``` $ chmod +x ./mnmp.sh```  
 然后运行: ``` $ ./mnmp.sh start | stop | restart ```即可.  
@@ -76,7 +76,7 @@ error_reporting = E_ALL
 Ps: 如果遇到类似这样的错误: "xxx" failed (13: Permission denied), 需要设定下权限:  
 ``` $ chmod 755 $HOME && chmod 755 $HOME/Documents/```
 
-6. phpmyadmin:(可选)  
+## 6. phpmyadmin:(可选)  
 
 下载: www.phpmyadmin.net/home_page/downloads.php  
 解压到nginx的conf指定的目录, config.sample.inc.php重命名为config.inc.php, 修改$cfg['Servers'][$i]['AllowNoPassword'] = true;  
