@@ -5,7 +5,7 @@
 
 MYSQL="/usr/local/bin/mysql.server"
 NGINX="/usr/local/bin/nginx"
-PHPFPM="/usr/local/opt/php56/sbin/php56-fpm" # sys default: "/usr/sbin/php-fpm"
+PHPFPM="/usr/local/opt/php71/sbin/php71-fpm" # sys default: "/usr/sbin/php-fpm"
 # PIDPATH="/usr/local/var/run"
 param=$1
 type=$2
