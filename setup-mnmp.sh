@@ -7,7 +7,7 @@ brew tap josegonzalez/homebrew-php
 # install homebrew-dupes
 brew tap homebrew/dupes
 
-# install nginx + mysql + php56 + php-fpm
+# install nginx + mysql + php71 + php-fpm
 brew install pcre
 brew install nginx
 
@@ -15,15 +15,15 @@ brew install nginx
 
 # fix curl https (nginx 502)
 # brew options php56 # see more options
-brew install php56 --with-imap --with-mysql --with-fpm --with-postgresql --without-apache --with-homebrew-openssl --with-homebrew-curl #--with-pdo-oci
+brew install php71 --with-imap --with-mysql --with-fpm --with-postgresql --without-apache --with-homebrew-openssl --with-homebrew-curl #--with-pdo-oci
 # brew search php56-
 # brew uninstall imagemagick && brew install --fresh imagemagick
-brew install php56-imagick --build-from-source
-brew install php56-igbinary
-brew install php56-redis #--with-igbinary --build-from-source
-brew install php56-mcrypt
-brew install php56-memcached
-brew install php56-memcache
+brew install php71-imagick --build-from-source
+brew install php71-igbinary
+brew install php71-redis #--with-igbinary --build-from-source
+brew install php71-mcrypt
+brew install php71-memcached
+brew install php71-memcache
 # brew install php56-tidy
 # brew install php56-xdebug
 
