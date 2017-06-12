@@ -7,15 +7,15 @@ brew untap homebrew/dupes
 
 brew uninstall pcre
 
-brew uninstall php56-imagick
-brew uninstall php56-igbinary
-brew uninstall php56-redis
-brew uninstall --force php56-mcrypt
-brew uninstall php56-memcached
-brew uninstall php56-memcache
+brew uninstall php71-imagick
+brew uninstall php71-igbinary
+brew uninstall php71-redis
+brew uninstall --force php71-mcrypt
+brew uninstall php71-memcached
+brew uninstall php71-memcache
 # brew uninstall php56-xdebug
 
-brew uninstall --force php56
+brew uninstall --force php71
 brew uninstall --force mysql
 brew uninstall --force nginx
 
